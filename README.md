@@ -6,34 +6,34 @@ ZFNet implemented in pytorch
 
 
 ### C1
-nn.Conv2d(3, 96, k=7, stride=2, padding=1)
-nn.ReLU()
-nn.MaxPool2d(k=3, stride=2, padding=1)
+nn.Conv2d(3, 96, k=7, stride=2, padding=1)  
+nn.ReLU()  
+nn.MaxPool2d(k=3, stride=2, padding=1)  
 nn.LocalResponseNorm(5)  
 
 ### C2
-nn.Conv2d(96, 256, k=5, stride=2)
-nn.ReLU()
-nn.MaxPool2d(k=3, stride=2, padding=1)
+nn.Conv2d(96, 256, k=5, stride=2)  
+nn.ReLU()  
+nn.MaxPool2d(k=3, stride=2, padding=1)  
 nn.LocalResponseNorm(5)  
 
 ### C3
-nn.Conv2d(256, 384, k=3, stride=1, padding=1)
+nn.Conv2d(256, 384, k=3, stride=1, padding=1)  
 nn.ReLU()  
 
 ### C4
-nn.Conv2d(384, 384, k=3, stride=1, padding=1)
+nn.Conv2d(384, 384, k=3, stride=1, padding=1)  
 nn.ReLU()  
 
 ### C5
-nn.Conv2d(384, 256, k=3, stride=1, padding=1)
-nn.ReLU()
+nn.Conv2d(384, 256, k=3, stride=1, padding=1)  
+nn.ReLU()  
 nn.MaxPool2d(k=3, stride=2)  
 
 ### F1
-nn.Linear(9216, 4096)
+nn.Linear(9216, 4096)  
 nn.Dropout()  
 
 ### F2
-nn.Linear(4096, num_classes)
+nn.Linear(4096, num_classes)  
 nn.Dropout()
