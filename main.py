@@ -20,7 +20,7 @@ batch_size = 256
 epochs = 1000
 earlystop = 7  # for early stopping
 # path = "D:/projects"
-path = os.path.dirname(os.getcwd()) # "D:/projects"
+path = os.path.dirname(os.getcwd()) # os.getcwd = "D:/projects/ZFNet", os.path.dirname = "D:/projects" directory name of ZFNet
 datapath = path + "/dataset"
 resultpath = path + "/" + model_name + "/results"
 modelpath = path + "/" + model_name + "/models"

@@ -18,7 +18,7 @@ model_name = "ZFNet"
 path = os.path.dirname(os.getcwd()) # "D:/projects"
 datapath = path + '/dataset'
 modelpath = path + "/" + model_name + "/models/" + args.model
-batch_size = 32
+batch_size = 256
 
 ### 사용 가능한 gpu 확인 및 설정
 if torch.cuda.is_available():
